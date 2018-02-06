@@ -1,0 +1,26 @@
+{{#if user}}
+    <a href="/logout">Вите надо Выйти</a>
+    <h1>Настройки для клиентов</h1>
+    <ul>
+        {{#each clients}}
+            <li>{{this.Login}}</li>
+        {{/each}}
+    </ul>
+    <form class="form" action="/setStats" method="post">
+        <div class="form-group">
+            <label for="clicks">Количество кликов</label>
+            <input name="clicks" type="number" class="form-control" placeholder="50">
+        </div>
+        <div class="form-group">
+            <label for="depth">Глубина просмотров</label>
+            <input name="depth" type="number" step=".1" class="form-control" placeholder="1.8">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">Ok!)</button>
+        </div>
+    </form>
+{{else}}
+    <a href="login">Login</a><br>
+    <a href="register">Register</a>
+{{/if}}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6d4e5603-74a6-4d62-87ad-05ff1f02f9a9" name="testcat" url="http://testcat.by">
+        <fileTransfer host="testcat.by" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="77f5b448-b168-4889-a1ca-f6d9e6d96cad" name="roma" url="http://138.201.60.18">
+        <fileTransfer host="138.201.60.18" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
